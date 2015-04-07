@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jesumarquez/molinete/issues"
   },
-  "homepage": "https://github.com/jesumarquez/molinete"
+  "homepage": "https://github.com/jesumarquez/molinete",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }

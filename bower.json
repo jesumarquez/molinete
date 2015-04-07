@@ -1,0 +1,23 @@
+{
+  "name": "molinete",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jesumarquez/molinete",
+  "authors": [
+    "Jesu Marquez <jesumarquez@gmail.com>"
+  ],
+  "description": "control de horas",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

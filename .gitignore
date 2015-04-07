@@ -28,3 +28,6 @@ node_modules
 
 # Channel 9 Worspace
 .c9
+
+#bower
+bower_components
