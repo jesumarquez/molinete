@@ -1,12 +1,8 @@
 var express = require('express');
+var routes = require("./routes");
 var app = express();
 
-app.use('/', express.static('public'));
-app.use('/static', express.static('bower_components'));
-
-/*app.get('/', function (req, res) {
-  res.send('Hello World!');
-});*/
+routes(app);
 
 var server = app.listen(process.env.PORT, function () {
 
