@@ -3,3 +3,8 @@
     color:white;
 }
 
+@media (max-width: 600px){
+    .banner-img{
+        width:100%;
+    }
+}
