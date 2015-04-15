@@ -1,10 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link href="/static/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        
         <title>Molinete</title>
     </head>
     <body>
-        <h1>Welcome!</h1>
+        
+        <!-- Site Header and Navigation -->
+        <header class="top" role="header">
+            <div class="container">
+                <a href="#" class="navbar-brand pull-left">
+                    Molinete
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+                <nav class="navbar-collapse collapse" role="navigation">
+                    <ul class="navbar-nav nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="banner container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Molinete</h1>
+                    <p>Control de Horas</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://placehold.it/350x150"/>
+                </div>
+            </div>
+        </section>
+
+        <main class="container">
+            <section class="row">
+                <article class="col-md-9">
+                    <header>
+                        <h2>Article 1</h2>
+                        <p>
+                            More text, More text, More text, More text, More text, More text,
+                            More text, More text, More text, More text, More text, More text, 
+                            More text, More text, More text, More text, More text, More text, 
+                            More text, More text, More text, More text, More text, More text, 
+                            More text, More text, More text, More text, More text, More text. 
+                        </p>
+                    </header>
+                </article>
+                <article class="col-md-3">
+                    <header>
+                        <h2>Side 1</h2>
+                    </header>
+                    <p>Some text</p>
+                </article>
+            </section>
+        </main>
+        
+
+        <!--
+        <main class="container">
+            <h2>Main</h2>
+            <p>Some text</p>
+        </main>
+        <section>
+            <article>
+                <header>
+                    <h2>Article 1</h2>
+                    <p>Some text</p>
+                </header>
+                <p>
+                    More text, More text, More text, More text, More text, More text,
+                    More text, More text, More text, More text, More text, More text, 
+                    More text, More text, More text, More text, More text, More text, 
+                    More text, More text, More text, More text, More text, More text, 
+                    More text, More text, More text, More text, More text, More text. 
+                </p>
+            </article>
+        </section>
+        <aside class="container">
+            <h2>About</h2>
+            <p>Some text</p>
+        </aside>
+        -->
+        
+        <footer class="container">
+            <p>(c) 2015 Higo Solutions</p>
+        </footer>
+        
+        <script src="/static/jquery/dist/jquery.min.js"></script>
+        <script src="/static/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
