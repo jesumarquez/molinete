@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MolineteApp">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,8 @@
                 </button>
                 <nav class="navbar-collapse collapse" role="navigation">
                     <ul class="navbar-nav nav">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#/">Home</a></li>
+                        <li><a href="#/hours">My Hours</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -37,32 +38,13 @@
                     <p>Control de Horas</p>
                 </div>
                 <div class="col-md-4">
-                    <img class="banner-img" src="http://placehold.it/350x150"/>
+                    <img class="banner-img" src="https://placehold.it/350x150"/>
                 </div>
             </div>
         </section>
 
         <main class="container">
-            <section class="row">
-                <article class="col-md-9">
-                    <header>
-                        <h2>Article 1</h2>
-                        <p>
-                            More text, More text, More text, More text, More text, More text,
-                            More text, More text, More text, More text, More text, More text, 
-                            More text, More text, More text, More text, More text, More text, 
-                            More text, More text, More text, More text, More text, More text, 
-                            More text, More text, More text, More text, More text, More text. 
-                        </p>
-                    </header>
-                </article>
-                <article class="col-md-3">
-                    <header>
-                        <h2>Side 1</h2>
-                    </header>
-                    <p>Some text</p>
-                </article>
-            </section>
+            <div ng-view/>
         </main>
         
 
@@ -96,7 +78,11 @@
             <p>(c) 2015 Higo Solutions</p>
         </footer>
         
-        <script src="/static/jquery/dist/jquery.min.js"></script>
-        <script src="/static/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/static/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="/js/app/app.js"></script>
+        <script type="text/javascript" src="/js/app/hours/hours.controller.js"></script>
     </body>
 </html>

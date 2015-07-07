@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jesumarquez/molinete",
   "dependencies": {
+    "bower": "^1.4.1",
     "express": "^4.12.3"
   },
   "devDependencies": {
