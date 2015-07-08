@@ -1,4 +1,11 @@
 <h1>Hours</h1>
-<ul class="list-group">
-    <li class="list-group-item" ng-repeat="hour in hours">{{hour.date}}</li>
-</ul>
+<div ng-repeat="item in dates">
+    <hr>
+    <h3>{{item.day.dayName}}, {{item.day.hours}} Hours {{item.day.minutes}} min</h3>
+    <div ng-repeat="range in item.day.ranges">
+        <h4>{{range.hours}} Hours {{range.minutes}} min</h4>
+        <ul>
+            <li ng-repeat="event in range.events">{{event.time}}</li>
+        </ul>
+    </div>
+</div>
