@@ -1,8 +1,13 @@
 angular.module('MolineteApp.Hours', [])
-.controller('HoursController', ['$scope', HoursController]);
+.controller('HoursController', ['$scope', '$http', HoursController]);
 
-function HoursController($scope){
- $scope.dates = [
+function HoursController($scope, $http){
+   
+   $http.get('/api/hours').success(function(data){
+      $scope.dates = data;
+   });
+   
+ /*$scope.dates = [
    {
       id : 1,
       day : {
@@ -73,5 +78,5 @@ function HoursController($scope){
             }]
       }
    }   
- ];
+ ];*/
 }
